@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapzzz · Ayuda</title>
+<meta name="description" content="Cómo usar Mapzzz, la alarma que te despierta antes de llegar a tu parada.">
+<style>
+  :root { --bg: #EEF1EF; --card: #ffffff; --text: #07090A; --muted: #5E6662; --accent: #0E8F4A; --tint: #DDF5E7; --alert: #E8541C; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #07090A; --card: #14181A; --text: #F2F4F3; --muted: #8E9692; --accent: #1FE07A; --tint: #123322; --alert: #FF6A33; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 20px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; }
+  nav a { background: var(--card); color: var(--text); text-decoration: none; padding: 6px 12px; border-radius: 999px; font-size: 14px; }
+  section { background: var(--card); border-radius: 20px; padding: 20px 22px; margin-top: 14px; }
+  h2 { font-size: 20px; margin: 0 0 8px; color: var(--accent); }
+  h3 { font-size: 16px; margin: 16px 0 4px; }
+  p, li { margin: 6px 0; }
+  ol, ul { padding-left: 22px; margin: 6px 0; }
+  .steps { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 10px; }
+  .step { background: var(--tint); border-radius: 14px; padding: 12px 14px; }
+  .step b { display: block; margin-bottom: 2px; }
+  .note { border-left: 4px solid var(--alert); padding: 2px 0 2px 12px; color: var(--muted); }
+  details { border-top: 1px solid color-mix(in srgb, var(--muted) 25%, transparent); padding: 10px 0; }
+  details:first-of-type { border-top: 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Cómo usar Mapzzz</h1>
+  <p class="lead">La alarma que te despierta antes de llegar a tu parada, para que puedas dormir tranquilo en el colectivo, el subte o el tren.</p>
+  <nav>
+    <a href="#viaje">Armar un viaje</a>
+    <a href="#durante">Durante el viaje</a>
+    <a href="#llegada">Al llegar</a>
+    <a href="#favoritos">Favoritos</a>
+    <a href="#widget">Widget</a>
+    <a href="#ajustes">Configuración</a>
+    <a href="#preguntas">Preguntas</a>
+  </nav>
+</header>
+
+<section>
+  <h2>En tres pasos</h2>
+  <div class="steps">
+    <div class="step"><b>1. Elige a dónde vas</b>Busca un lugar, toca un favorito o mantén presionado el mapa.</div>
+    <div class="step"><b>2. Elige cómo vas</b>Colectivo, subte, tren o auto, con trasbordos.</div>
+    <div class="step"><b>3. Duerme tranquilo</b>Suena una alarma cuando estés llegando, aunque el teléfono esté en silencio.</div>
+  </div>
+</section>
+
+<section id="viaje">
+  <h2>Armar un viaje</h2>
+  <h3>1. Destino</h3>
+  <p>Toca <b>«¿A dónde vas?»</b> y escribe una dirección o un lugar (un cine, una estación, un negocio). También puedes mantener presionado el mapa para soltar un pin justo donde quieres.</p>
+  <h3>2. Transporte</h3>
+  <p>Mapzzz te muestra las opciones de colectivo, subte y tren desde donde estás, con el tiempo de viaje y la hora de llegada, como en un mapa. Elige una. Si el viaje tiene trasbordos, suena una alarma antes de <b>cada bajada</b>; puedes apagar las que no necesites.</p>
+  <h3>3. Radio</h3>
+  <p>Es la distancia a la que quieres que suene: de 100 m a 5 km. Mueve el deslizador o toca 300 m, 500 m, 1 km o 2 km. El mapa te muestra el círculo alrededor de tu destino.</p>
+  <h3>4. Aviso</h3>
+  <p>Además del radio, puedes pedir que suene unos minutos antes de llegar (de 2 a 20 min), según la velocidad a la que vas. Suena lo que pase primero.</p>
+  <p>Toca <b>Iniciar</b> y listo: ya puedes bloquear el teléfono.</p>
+</section>
+
+<section id="durante">
+  <h2>Durante el viaje</h2>
+  <ul>
+    <li><b>Pantalla bloqueada e Isla dinámica:</b> ves cuánto te falta sin abrir la app.</li>
+    <li><b>Tarjeta del viaje:</b> en Inicio ves la distancia, el destino, dónde bajarte y el recorrido. Toca el mapa para verlo en grande.</li>
+    <li><b>Compartir:</b> el botón de compartir manda un mensaje como «Voy en camino a … Llego en … minutos».</li>
+    <li><b>Batería baja:</b> si baja del 20% y no está cargando, te avisamos para que conectes el cargador.</li>
+    <li><b>Editar:</b> puedes cambiar el destino, la ruta o el radio sin cortar el viaje.</li>
+  </ul>
+  <p class="note">En el subte no hay GPS: Mapzzz usa el horario del recorrido para que la alarma suene igual.</p>
+</section>
+
+<section id="llegada">
+  <h2>Al llegar</h2>
+  <ul>
+    <li>Suena la alarma, con el teléfono en silencio o bloqueado. Puedes <b>Detenerla</b> o <b>Aplazarla</b> unos minutos.</li>
+    <li>El viaje termina solo: se va de la pantalla bloqueada y el widget vuelve a tus favoritos.</li>
+    <li><b>¿Te pasaste?</b> Durante unos minutos Mapzzz se fija si seguiste de largo. Si te alejas de tu destino, te avisa y te muestra cómo volver.</li>
+    <li>También puedes avisarlo tú: mantén presionado el aviso <b>«Llegaste a…»</b> y toca <b>«Me pasé»</b>.</li>
+    <li>Si fue una falsa alarma, toca <b>«Estoy bien»</b> y el viaje se cierra.</li>
+  </ul>
+  <p>Si te bajas y caminas hacia tu destino, Mapzzz no te va a avisar por error: mide la distancia a tu destino, no a la parada.</p>
+</section>
+
+<section id="favoritos">
+  <h2>Favoritos y recientes</h2>
+  <p>Guarda lugares como Casa o Trabajo con su radio y su aviso. Desde Inicio sales con un toque: el destino queda elegido y solo tienes que elegir la ruta (los horarios cambian todos los días).</p>
+  <p>En <b>Recientes</b> están tus últimos destinos. Puedes marcarlos como favoritos con la estrella o borrarlos deslizándolos.</p>
+</section>
+
+<section id="widget">
+  <h2>Widget</h2>
+  <p>Mantén presionada la pantalla de inicio del iPhone, toca <b>Editar → Agregar widget</b>, busca <b>Mapzzz</b> y elige el tamaño:</p>
+  <ul>
+    <li><b>Chico:</b> tres favoritos y «Nueva»; durante un viaje, cuánto te falta.</li>
+    <li><b>Mediano:</b> tres favoritos y «¿A dónde vas?»; durante un viaje, el progreso, la línea y a qué distancia suena.</li>
+  </ul>
+  <p>Tocar un favorito abre Mapzzz con el destino listo para elegir la ruta.</p>
+</section>
+
+<section id="ajustes">
+  <h2>Configuración</h2>
+  <ul>
+    <li><b>Tu nombre</b> para saludarte.</li>
+    <li><b>Colores:</b> Mapzzz (verde y naranja), Neón (violeta y lima) o Eléctrico (azul y rojo). El ícono de la app cambia con el tema.</li>
+    <li><b>Modo:</b> claro, oscuro o automático (sigue al teléfono).</li>
+    <li><b>Efecto vidrio:</b> la transparencia de la barra, el buscador y los botones del mapa.</li>
+    <li><b>Unidades:</b> kilómetros o millas.</li>
+    <li><b>Probar la alarma:</b> para escuchar cómo suena antes de tu primer viaje.</li>
+  </ul>
+</section>
+
+<section id="preguntas">
+  <h2>Preguntas frecuentes</h2>
+  <details>
+    <summary>¿Suena si el teléfono está en silencio?</summary>
+    <p>Sí. Mapzzz usa las alarmas del iPhone, que suenan aunque esté en silencio, en No molestar o bloqueado. Necesitas darle permiso de <b>Alarmas</b> (requiere iOS 26).</p>
+  </details>
+  <details>
+    <summary>¿Qué permisos necesita y para qué?</summary>
+    <p><b>Ubicación:</b> para saber cuánto te falta, solo durante un viaje. <b>Alarmas:</b> para sonar fuerte. <b>Notificaciones:</b> para avisarte si te pasaste o si te queda poca batería.</p>
+  </details>
+  <details>
+    <summary>¿Gasta mucha batería?</summary>
+    <p>Lejos del destino, Mapzzz pide tu ubicación de vez en cuando; al acercarse, más seguido. Cuando llegas, apaga el GPS. Si tu viaje es largo, conviene salir con carga.</p>
+  </details>
+  <details>
+    <summary>¿Y si no hay señal o voy en subte?</summary>
+    <p>Sin GPS, Mapzzz usa el horario del recorrido para hacer sonar la alarma a tiempo. Cuando vuelve la señal, sigue con tu ubicación real.</p>
+  </details>
+  <details>
+    <summary>¿Necesito una cuenta? ¿Qué hacen con mis datos?</summary>
+    <p>No hay cuenta. Tus favoritos, recientes y viajes quedan en tu teléfono. Lee la <a href="./">política de privacidad</a>.</p>
+  </details>
+  <details>
+    <summary>No encuentro mi destino en el buscador</summary>
+    <p>Prueba agregando el barrio o la ciudad (por ejemplo «Benavídez Tigre»), o mantén presionado el mapa para poner el pin a mano.</p>
+  </details>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p>¿Algo no funciona o tienes una idea? Escríbenos al mail de contacto que figura en la ficha de Mapzzz en la App Store, o envía tus comentarios desde TestFlight (captura de pantalla → Compartir beta).</p>
+</section>
+
+<footer>Mapzzz · <a href="./">Privacidad</a></footer>
+</main>
+</body>
+</html>
